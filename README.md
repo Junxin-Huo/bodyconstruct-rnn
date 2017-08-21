@@ -1,7 +1,15 @@
 # bodyconstruct-rnn
-RNN, Tensorflow
 
-function: predict elbow position according to hand position and rotation.
+A project to predict elbow position according to hand position and rotation.
+Designed for VR games.
+
+Use: RNN, Tensorflow, unity, (finalik), oculus rift (HTC vive)
+
+# introduction
+How to make a person model looks like real in a VR game? Our way is machine learing.
+Using RNN is important because the actions are moving according context.
+How to decided inputs and outputs? Our method is imput a hand's (such as right hand) position and rotation, output elbow,s (right elbow) position and rotation. (Left arm and Right arm can mirror from each other)
+
 
 input: hand position(x, y, z) and hand rotation(x1, y1, z1, x2, y2, z2).
 output: elbow position(x, y, z).
@@ -22,8 +30,11 @@ Train the net.
 # test.py
 Test tne net.
 
-# addition
-when you run the train.py, you can find a training_infomation file in ./graph/train/. 
+# run
+when you run the train.py
+   > python train.py
+
+you can find a training_infomation file in ./graph/train/. 
 switch into it
    > cd graph/train/
    
