@@ -8,7 +8,14 @@ Use: RNN, Tensorflow, unity, (finalik), oculus rift (HTC vive)
 # introduction
 How to make a person model looks like real in a VR game? Our way is machine learing.
 Using RNN is important because the actions are moving according context.
+
 How to decided inputs and outputs? Our method is imput a hand's (such as right hand) position and rotation, output elbow,s (right elbow) position and rotation. (Left arm and Right arm can mirror from each other)
+
+Next problem is "Gimble lock". A terrible problem.
+Our method is replacing the eulerAngles by 2 positions.
+Put one cube to the position (0, 0, 1) as a child object of right(left) hand.
+Put the other cube to the position (0, 1, 0) as a child object of right(left) hand.
+As a result, an eulerAngles and two positions can map each other one by one.
 
 
 input: hand position(x, y, z) and hand rotation(x1, y1, z1, x2, y2, z2).
