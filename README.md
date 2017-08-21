@@ -37,6 +37,9 @@ Train the net.
 # test.py
 Test tne net.
 
+# DataCollection.cs
+Collect data in unity.
+
 # run
 when you run the train.py
    > python train.py
